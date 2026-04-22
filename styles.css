@@ -138,7 +138,11 @@ h4 { font-size: 1rem; }
 .steps-list p,
 .bullet-list li,
 .meta-line,
-.hero-note {
+.hero-note,
+.support-line,
+.package-note,
+.sample-alert small,
+.stat-strip small {
   color: var(--muted);
 }
 
@@ -210,7 +214,10 @@ h4 { font-size: 1rem; }
 .legal-card,
 .metric-card,
 .cta-band,
-.legal-page {
+.legal-page,
+.sample-alert,
+.package-choice,
+.stat-strip {
   background: var(--paper-soft);
   border: 1px solid var(--line);
   border-radius: var(--radius);
@@ -286,7 +293,10 @@ h4 { font-size: 1rem; }
 .pricing-grid,
 .info-grid,
 .form-layout,
-.steps-list {
+.steps-list,
+.chip-row,
+.package-grid,
+.stat-grid {
   display: grid;
   gap: 1rem;
 }
@@ -337,7 +347,10 @@ h4 { font-size: 1rem; }
 .lead-form,
 .steps-card,
 .legal-card,
-.legal-page {
+.legal-page,
+.sample-alert,
+.package-choice,
+.stat-strip {
   padding: 1.35rem;
 }
 
@@ -361,12 +374,14 @@ h4 { font-size: 1rem; }
 .bullet-list,
 .price-card ul,
 .alert-box ul,
-.legal-page ul {
+.legal-page ul,
+.legal-card ul {
   padding-left: 1.15rem;
 }
 
 .bullet-list li,
-.price-card li {
+.price-card li,
+.legal-card li {
   margin-bottom: 0.45rem;
 }
 
@@ -442,7 +457,10 @@ h4 { font-size: 1rem; }
 .problem-card h3,
 .role-card h3,
 .price-card h3,
-.legal-card h3 {
+.legal-card h3,
+.sample-alert h3,
+.package-choice h4,
+.stat-strip h4 {
   margin-bottom: 0.75rem;
 }
 
@@ -493,7 +511,8 @@ h4 { font-size: 1rem; }
 
 .legal-inline a,
 .site-footer a,
-.legal-page a {
+.legal-page a,
+.support-line a {
   color: var(--accent-2);
 }
 
@@ -520,6 +539,57 @@ h4 { font-size: 1rem; }
 }
 
 .form-note {
+  margin-top: 1rem;
+  font-size: 0.95rem;
+}
+
+.chip-row {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.chip {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 46px;
+  padding: 0.75rem 1rem;
+  border-radius: 999px;
+  background: rgba(36, 24, 14, 0.06);
+  border: 1px solid rgba(72, 52, 31, 0.10);
+  font-weight: 700;
+  text-align: center;
+}
+
+.package-grid,
+.stat-grid {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.package-choice {
+  padding: 1rem;
+}
+
+.package-choice strong,
+.sample-alert strong,
+.stat-strip strong {
+  display: block;
+  margin-bottom: 0.35rem;
+}
+
+.sample-alert {
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.84), rgba(255, 250, 244, 0.88));
+}
+
+.sample-alert code {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  font-size: 0.9rem;
+}
+
+.stat-strip {
+  background: rgba(255, 255, 255, 0.84);
+}
+
+.support-line {
   margin-top: 1rem;
   font-size: 0.95rem;
 }
@@ -557,7 +627,10 @@ h4 { font-size: 1rem; }
   .info-grid,
   .footer-grid,
   .metrics-row,
-  .form-layout {
+  .form-layout,
+  .chip-row,
+  .package-grid,
+  .stat-grid {
     grid-template-columns: 1fr;
   }
 
