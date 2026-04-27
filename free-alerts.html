@@ -11,7 +11,7 @@
   <header class="site-header">
     <div class="wrap nav">
       <a class="brand brand-image" href="index.html" aria-label="Apple to Capital LLC home">
-        <img class="top-logo" src="data:image/webp;base64,UklGRrRaAABXRUJQVlA4IKhaAADwKgCdASqEAXUCPrVOmUmlI6KhM6wMALASCWluK0WkIQBOm8L+W7bH7GkA/vn+N31OSZKXfCaX6gKZH4M5J8sX7TM0Vn+P+n4HktLlT8vgzo3/OgTeKwW1E/4P3/z0E/I4lQ1J+Hav9ps6nrv7bMgB0ni+KhVF0mEl5XcQ+YwbpOv5Bt3W5RMtEm1aGKGDIt6TeXdV3C34do4nNvtz4kikj0KVl7TygBkPaq8hU3Pb6ofYd3nn3S+E/hfIeAekMSp+1P2RQf13dGn8H9OeS4JYGZL9iQOrcOa6NeM5lJ/ydz9B9mvj2OMNuSYffmCLNjyA4kzjSMH3bB6kL8bsN9x+4iMlK3zfM8IqZ1DdQ/Zg/w1b0dsgqVf0C9CSDChW5Y/0n68WAKmEtRr8kOm1VX/LcU9lXx3Q0QgL8SG1e0ygps9ZtR1vEB3oB61SLLws6bTKGWn2DL2xW8Vz+4V69eK67rJAuYLY6dcHj8OVTTi1h3hhGmbb+q1OvhjZ2Lw4elgoa4+agI1sUeJ4qo9q6EwYzbcjrT8Y6VqJ3lQhV5WccGYFVtHq0VUbQkM8pUQdAlqVY7I5c5k7J2tV0U2vVxGN1+3VYlq8Q84cO4xJ7sSgI5TIv3Z3JJvH6n3sD6eJw3F7IE4i1k8xL3YVbW6x6Qzot0h6b1E1z1k+9Mc8m2sPp0FQ14nGmI4xla2pm5EVtHINnkKBgOLrlvDdGE06+NoqMeGv8cGz2vBeWnFymdcu2b9m3VcKJ+7YQ/l7QHkksA0u9rW+zjt+E4G5Ry+2qa6rIYHqk4g+zj3oP8y2kUmGg/hu3Moj6xAaA0k1vK0zyj7z9nBzdY3cA2+eqKQmVok/3vY4bTFzbfaJ2XkduYwVqD8O8mCkifYh0hVJ0Wwnf9JSk+7FY4s2lR1sKjJ6P+V/9C4u6Qg5Qq7dVgW3vS1lF0hPuQ1rVnF4MyM5n2ixVn3bfYz4onboJzznM3ddEmJ4WcJ4ipGJHiMBSwmy4M71V4V2FK1g6Z7nP6j2w7Rj6E4gS4O+wk1Y4QcP0q2hLr8mS6Jg8U0M5fM7+gs6m8xY0Q9Rpe9mNw4AA=" alt="Apple to Capital LLC logo" />
+        <img class="top-logo" src="assets/logo-dark.svg" alt="Apple to Capital LLC logo" />
       </a>
       <nav class="nav-links">
         <a href="index.html">Home</a>
@@ -39,9 +39,9 @@
           <div class="sample-alert">
             <span class="kicker">Sample alert preview</span>
             <h3>New Baltimore Permit Alert</h3>
-            <strong>Address:</strong> 2111 Garrison Blvd<br />
-            <strong>Case:</strong> BCCM-26-001534<br />
-            <strong>Signal:</strong> High-Value Permit Lead<br />
+            <p><b>Address:</b> 2111 Garrison Blvd<br />
+            <b>Case:</b> BCCM-26-001534<br />
+            <b>Signal:</b> High-Value Permit Lead</p>
             <small>Example formatting only. Live alerts are sourced from public city records.</small>
           </div>
         </div>
@@ -66,58 +66,21 @@
           <p class="form-note">Submit your information below to request complimentary launch-period alerts.</p>
 
           <div class="form-layout">
-            <label>
-              Email address
-              <input type="email" name="email" placeholder="you@example.com" required />
-            </label>
-
-            <label>
-              Mobile number (optional)
-              <input type="tel" name="phone" placeholder="(555) 555-5555" />
-            </label>
-
-            <label>
-              Full name (optional)
-              <input type="text" name="name" placeholder="Your name" />
-            </label>
-
-            <label>
-              Role
-              <select name="role" required>
+            <label>Email address<input type="email" name="email" placeholder="you@example.com" required /></label>
+            <label>Mobile number (optional)<input type="tel" name="phone" placeholder="(555) 555-5555" /></label>
+            <label>Full name (optional)<input type="text" name="name" placeholder="Your name" /></label>
+            <label>Role<select name="role" required>
                 <option value="">Select your role</option>
-                <option>Contractor</option>
-                <option>Landlord</option>
-                <option>Property Manager</option>
-                <option>Investor</option>
-                <option>Developer</option>
-                <option>Other Property Professional</option>
-              </select>
-            </label>
-
-            <label>
-              Package interest
-              <select name="package_interest">
+                <option>Contractor</option><option>Landlord</option><option>Property Manager</option><option>Investor</option><option>Developer</option><option>Other Property Professional</option>
+            </select></label>
+            <label>Package interest<select name="package_interest">
                 <option value="">Select package interest</option>
-                <option>Starter</option>
-                <option>Compliance Package</option>
-                <option>Contractor Package</option>
-                <option>Investor Intelligence</option>
-                <option>Distressed Property &amp; Enforcement Signals</option>
-                <option>Metro Intelligence</option>
-              </select>
-            </label>
-
-            <label>
-              Priority alert type
-              <select name="alert_type">
+                <option>Starter</option><option>Compliance Package</option><option>Contractor Package</option><option>Investor Intelligence</option><option>Distressed Property &amp; Enforcement Signals</option><option>Metro Intelligence</option>
+            </select></label>
+            <label>Priority alert type<select name="alert_type">
                 <option value="">Select alert interest</option>
-                <option>Permits</option>
-                <option>Violations / Compliance</option>
-                <option>Stop-Work Activity</option>
-                <option>Vacant / Distress Signals</option>
-                <option>General Baltimore Intelligence</option>
-              </select>
-            </label>
+                <option>Permits</option><option>Violations / Compliance</option><option>Stop-Work Activity</option><option>Vacant / Distress Signals</option><option>General Baltimore Intelligence</option>
+            </select></label>
           </div>
 
           <label class="checkbox-row">
@@ -127,48 +90,24 @@
 
           <label class="checkbox-row">
             <input type="checkbox" name="sms_consent" />
-            <span>If you provide a mobile number and check this box, you agree to receive SMS messages from Apple to Capital LLC related to property intelligence alerts, service updates, and account-related communications. Message frequency varies. Message and data rates may apply. Reply <strong>STOP</strong> to unsubscribe. Reply <strong>HELP</strong> for help.</span>
+            <span>If you provide a mobile number and check this box, you agree to receive SMS messages from Apple to Capital LLC related to property intelligence alerts, service updates, and account-related communications. Message frequency varies. Message and data rates may apply. Reply STOP to unsubscribe. Reply HELP for help.</span>
           </label>
 
           <p class="legal-inline">By submitting this form, you acknowledge our <a href="privacy-policy.html">Privacy Policy</a> and <a href="terms-of-use.html">Terms of Use</a>.</p>
-
           <button class="btn btn-dark full" type="submit">Request Free Alerts</button>
         </form>
 
         <aside class="steps-card">
           <h3>Program details</h3>
           <div class="steps-list">
-            <div class="step-item">
-              <div class="step-number">1</div>
-              <div>
-                <h4>Built from public Baltimore city records</h4>
-                <p>Signals are designed around public municipal record movement and filtered for launch-period usefulness.</p>
-              </div>
-            </div>
-            <div class="step-item">
-              <div class="step-number">2</div>
-              <div>
-                <h4>Email delivery active now</h4>
-                <p>The complimentary launch workflow is centered on email delivery while communications infrastructure expands.</p>
-              </div>
-            </div>
-            <div class="step-item">
-              <div class="step-number">3</div>
-              <div>
-                <h4>Clear consent and legal access</h4>
-                <p>Privacy and terms links are provided directly on this page, and SMS consent is kept separate from email signup.</p>
-              </div>
-            </div>
+            <div class="step-item"><div class="step-number">1</div><div><h4>Built from public Baltimore city records</h4><p>Signals are designed around public municipal record movement and filtered for launch-period usefulness.</p></div></div>
+            <div class="step-item"><div class="step-number">2</div><div><h4>Email delivery active now</h4><p>The complimentary launch workflow is centered on email delivery while communications infrastructure expands.</p></div></div>
+            <div class="step-item"><div class="step-number">3</div><div><h4>Clear consent and legal access</h4><p>Privacy and terms links are provided directly on this page, and SMS consent is kept separate from email signup.</p></div></div>
           </div>
 
           <div class="alert-box">
             <p class="box-title">These complimentary alerts may include:</p>
-            <ul>
-              <li>Permit filings</li>
-              <li>Inspection activity</li>
-              <li>Code enforcement actions</li>
-              <li>Development signals</li>
-            </ul>
+            <ul><li>Permit filings</li><li>Inspection activity</li><li>Code enforcement actions</li><li>Development signals</li></ul>
             <p class="micro strong">No card required. No commitment.</p>
           </div>
         </aside>
@@ -179,7 +118,7 @@
   <footer class="site-footer">
     <div class="wrap footer-grid">
       <div>
-        <img class="footer-logo" src="data:image/webp;base64,UklGRrRaAABXRUJQVlA4IKhaAADwKgCdASqEAXUCPrVOmUmlI6KhM6wMALASCWluK0WkIQBOm8L+W7bH7GkA/vn+N31OSZKXfCaX6gKZH4M5J8sX7TM0Vn+P+n4HktLlT8vgzo3/OgTeKwW1E/4P3/z0E/I4lQ1J+Hav9ps6nrv7bMgB0ni+KhVF0mEl5XcQ+YwbpOv5Bt3W5RMtEm1aGKGDIt6TeXdV3C34do4nNvtz4kikj0KVl7TygBkPaq8hU3Pb6ofYd3nn3S+E/hfIeAekMSp+1P2RQf13dGn8H9OeS4JYGZL9iQOrcOa6NeM5lJ/ydz9B9mvj2OMNuSYffmCLNjyA4kzjSMH3bB6kL8bsN9x+4iMlK3zfM8IqZ1DdQ/Zg/w1b0dsgqVf0C9CSDChW5Y/0n68WAKmEtRr8kOm1VX/LcU9lXx3Q0QgL8SG1e0ygps9ZtR1vEB3oB61SLLws6bTKGWn2DL2xW8Vz+4V69eK67rJAuYLY6dcHj8OVTTi1h3hhGmbb+q1OvhjZ2Lw4elgoa4+agI1sUeJ4qo9q6EwYzbcjrT8Y6VqJ3lQhV5WccGYFVtHq0VUbQkM8pUQdAlqVY7I5c5k7J2tV0U2vVxGN1+3VYlq8Q84cO4xJ7sSgI5TIv3Z3JJvH6n3sD6eJw3F7IE4i1k8xL3YVbW6x6Qzot0h6b1E1z1k+9Mc8m2sPp0FQ14nGmI4xla2pm5EVtHINnkKBgOLrlvDdGE06+NoqMeGv8cGz2vBeWnFymdcu2b9m3VcKJ+7YQ/l7QHkksA0u9rW+zjt+E4G5Ry+2qa6rIYHqk4g+zj3oP8y2kUmGg/hu3Moj6xAaA0k1vK0zyj7z9nBzdY3cA2+eqKQmVok/3vY4bTFzbfaJ2XkduYwVqD8O8mCkifYh0hVJ0Wwnf9JSk+7FY4s2lR1sKjJ6P+V/9C4u6Qg5Qq7dVgW3vS1lF0hPuQ1rVnF4MyM5n2ixVn3bfYz4onboJzznM3ddEmJ4WcJ4ipGJHiMBSwmy4M71V4V2FK1g6Z7nP6j2w7Rj6E4gS4O+wk1Y4QcP0q2hLr8mS6Jg8U0M5fM7+gs6m8xY0Q9Rpe9mNw4AA=" alt="Apple to Capital LLC logo" />
+        <img class="footer-logo" src="assets/logo-dark.svg" alt="Apple to Capital LLC logo" />
         <p>Real-time property intelligence and lead automation for contractors, landlords, investors, developers, property managers, and related professionals.</p>
         <p>Baltimore, Maryland</p>
         <p><a href="mailto:zoser@appletocapital.us">zoser@appletocapital.us</a></p>
